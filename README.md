@@ -8,9 +8,11 @@
 
 **https://projectescape463-hash.github.io/Morrow/**
 
-Деплой запускается автоматически при каждом push в `main` (GitHub Actions). В репозитории: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+Деплой запускается автоматически при каждом push в `main` (GitHub Actions).
 
-## Запуск локально
+**Один раз включите Pages:** репозиторий → **Settings** → **Pages** → **Build and deployment** → **Deploy from a branch** → ветка **`gh-pages`**, папка **`/ (root)`** → Save.
+
+Через 1–2 минуты после деплоя сайт откроется по ссылке выше.
 
 ```bash
 npm install
