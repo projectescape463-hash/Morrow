@@ -2,7 +2,15 @@
 
 Демонстрационный одностраничный сайт для портфолио: спешелти-кофейня **Morrow** (React + TypeScript + Vite).
 
-## Запуск
+## Публичная ссылка
+
+После деплоя сайт доступен по адресу:
+
+**https://projectescape463-hash.github.io/Morrow/**
+
+Деплой запускается автоматически при каждом push в `main` (GitHub Actions). В репозитории: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+## Запуск локально
 
 ```bash
 npm install
