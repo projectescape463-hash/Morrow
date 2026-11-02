@@ -1,6 +1,4 @@
-import { ADDRESS, HOURS } from '../data/content'
-
-const CONTACT_TELEGRAM = 'https://t.me/DfF_gg'
+import { ADDRESS, CONTACT_TELEGRAM, HOURS } from '../data/content'
 import { useReveal } from '../hooks/useReveal'
 
 export function VisitSection() {

@@ -1,4 +1,11 @@
+/** Путь к файлам из public/ — работает и локально, и на GitHub Pages (/Morrow/). */
+export function publicAsset(path: string) {
+  const clean = path.replace(/^\//, '')
+  return `${import.meta.env.BASE_URL}${clean}`
+}
+
 export const TELEGRAM_URL = 'https://t.me/morrow_coffee'
+export const CONTACT_TELEGRAM = 'https://t.me/DfF_gg'
 
 export const HOURS = [
   { days: 'Пн — Чт', time: '08:00 — 22:00' },
@@ -42,30 +49,30 @@ export const DESSERTS: MenuItem[] = [
 
 export const GALLERY = [
   {
-    src: '/images/g1.jpg',
+    src: publicAsset('images/g1.jpg'),
     alt: 'Барная стойка и лампы в интерьере кофейни',
     caption: 'Бар',
   },
   {
-    src: '/images/g2.jpg',
+    src: publicAsset('images/g2.jpg'),
     alt: 'Стол у окна с чашкой кофе',
     caption: 'У окна',
   },
   {
-    src: '/images/g3.jpg',
+    src: publicAsset('images/g3.jpg'),
     alt: 'Детали интерьера и растения',
     caption: 'Зал',
   },
   {
-    src: '/images/g4.jpg',
+    src: publicAsset('images/g4.jpg'),
     alt: 'Latte art в чашке',
     caption: 'Чашка',
   },
   {
-    src: '/images/g5.jpg',
+    src: publicAsset('images/g5.jpg'),
     alt: 'Десерты на витрине',
     caption: 'Витрина',
   },
 ] as const
 
-export const HERO_IMAGE = '/images/hero.jpg'
+export const HERO_IMAGE = publicAsset('images/hero.jpg')

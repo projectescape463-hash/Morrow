@@ -30,7 +30,9 @@ export function Header() {
   const close = () => setOpen(false)
 
   return (
-    <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
+    <header
+      className={`site-header ${scrolled ? 'site-header--scrolled' : ''} ${open ? 'site-header--menu-open' : ''}`}
+    >
       <div className="site-header__inner">
         <a href="#" className="site-header__brand" onClick={close}>
           <Logo />
